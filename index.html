@@ -42,8 +42,20 @@
 
       <section class="schedule">
         <h2>Свободные окошки</h2>
-        <p>📅 12–13 ноября — запись открыта</p>
-        <p>🎁 Акция недели — ламинирование в подарок</p>
+        <div class="month-view">
+          <button class="day" data-date="2026-01-01">1</button>
+          <button class="day" data-date="2026-01-02">2</button>
+          <button class="day" data-date="2026-01-03">3</button>
+          <button class="day" data-date="2026-01-04">4</button>
+          <button class="day" data-date="2026-01-05">5</button>
+          <button class="day" data-date="2026-01-06">6</button>
+          <button class="day" data-date="2026-01-07">7</button>
+        </div>
+        <div class="day-view">
+          <button class="back-btn">Назад</button>
+          <h3 class="day-title"></h3>
+          <div class="slots"></div>
+        </div>
       </section>
 
       <footer>
@@ -52,5 +64,7 @@
         <p>Telegram: @stoikaya_kosa</p>
       </footer>
     </div>
+
+    <script src="code.js" defer></script>
   </body>
 </html>
