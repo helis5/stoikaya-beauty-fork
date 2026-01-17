@@ -12,8 +12,21 @@
         <h1>Светлана Стойкая</h1>
         <h2>Афро косы | Брейды | Прически | Макияж</h2>
         <div class="hero-photo"></div>
-        <a class="btn-insta">Написать в Instagram</a>
-        <a class="btn-tg">Написать в Telegram</a>
+
+        <a
+          href="https://www.instagram.com/stoikaya_kosa"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn-insta"
+          >Написать в Instagram</a
+        >
+        <a
+          href="https://t.me/svetok1995"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn-tg"
+          >Написать в Telegram</a
+        >
       </header>
 
       <section class="about">
@@ -42,26 +55,55 @@
 
       <section class="schedule">
         <h2>Свободные окошки</h2>
-        <div class="month-view">
-          <button class="day" data-date="2026-01-01">1</button>
-          <button class="day" data-date="2026-01-02">2</button>
-          <button class="day" data-date="2026-01-03">3</button>
-          <button class="day" data-date="2026-01-04">4</button>
-          <button class="day" data-date="2026-01-05">5</button>
-          <button class="day" data-date="2026-01-06">6</button>
-          <button class="day" data-date="2026-01-07">7</button>
+        <div class="month-controls">
+          <button class="prev-month">←</button>
+          <span class="month-label"></span>
+          <button class="next-month">→</button>
         </div>
+        <div class="month-view"></div>
         <div class="day-view">
           <button class="back-btn">Назад</button>
           <h3 class="day-title"></h3>
+          <label>
+            <input type="checkbox" class="busy-toggle" />
+            Показать занятые
+          </label>
+
+          <div class="slots-legend">
+            <span class="legend-item">
+              <span class="legend-dot free"></span>
+              Свободно
+            </span>
+            <span class="legend-item">
+              <span class="legend-dot busy"></span>
+              Занято
+            </span>
+          </div>
+
           <div class="slots"></div>
         </div>
       </section>
 
       <footer>
         <p>Сайт создан с любовью 💕</p>
-        <p>Instagram: @stoikaya_kosa</p>
-        <p>Telegram: @stoikaya_kosa</p>
+        <p>
+          Instagram:
+          <a
+            href="https://www.instagram.com/stoikaya_kosa"
+            target="_blank"
+            rel="noopener noreferrer"
+            >@stoikaya_kosa</a
+          >
+        </p>
+        <p>
+          Telegram:
+          <a
+            href="https://t.me/svetok1995"
+            target="_blank"
+            rel="noopener noreferrer"
+            >@svetok1995</a
+          >
+        </p>
       </footer>
     </div>
 
