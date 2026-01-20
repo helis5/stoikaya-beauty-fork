@@ -63,12 +63,31 @@ header .btn-tg {
   border-radius: 10px;
   font-size: 16px;
   font-weight: 600;
-  border: none;
+  border: 2px solid transparent;
   cursor: pointer;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
   text-decoration: none;
   text-align: center;
   display: block;
+  transition: all 0.25s ease;
+}
+
+header .btn-insta:hover,
+header .btn-tg:hover {
+  background-color: transparent;
+  color: #f48fb1;
+  transform: scale(1.02);
+}
+
+/* Индивидуальные цвета при наведении */
+header .btn-insta:hover {
+  color: #e91e63;
+  border-color: #e91e63;
+}
+
+header .btn-tg:hover {
+  color: #0088cc;
+  border-color: #0088cc;
 }
 .btn-insta {
   margin-bottom: 15px;
@@ -90,9 +109,13 @@ header .btn-tg {
   margin-top: 35px;
   text-align: center;
 }
+
 .price ol {
   margin: 0px;
+  padding: 0;
+  list-style: none;
 }
+
 .price li {
   display: flex;
   justify-content: space-between;
@@ -100,6 +123,24 @@ header .btn-tg {
   padding-left: 4px;
   font-size: 18px;
   font-weight: 500;
+  position: relative;
+  padding-bottom: 8px;
+}
+
+.price li:not(:last-child):after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: repeating-linear-gradient(
+    to right,
+    transparent 0,
+    transparent 2px,
+    #ddd 2px,
+    #ddd 4px
+  );
 }
 
 /* Schedule */
