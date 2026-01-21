@@ -293,7 +293,7 @@ footer p {
   }
 
   .price li {
-    align-items:
+    align-items: flex-start; /* Выравниваем по верху */
     padding: 10px 0;
   }
   
