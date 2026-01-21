@@ -293,7 +293,7 @@ footer p {
   }
 
   .price li {
-    align-items: flex-start; /* Выравниваем по верху */
+    align-items: flex-start;
     padding: 10px 0;
   }
   
@@ -307,7 +307,7 @@ footer p {
   
   .price li span:last-child {
     width: 100%;
-    text-align: right; /* Цена по правому краю */
+    text-align: right;
     padding-top: 2px;
   }
 }
